@@ -1,0 +1,94 @@
+.weather {
+    min-width: 400px;
+    color: white;
+    margin: 20px auto 0 auto; 
+    background: rgba(18, 18, 18, 0.7);
+    border-radius: 16px;
+    box-shadow: 10px 11px 29px 0px #3f3f3f;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(18, 18, 18, 1);
+    padding: 20px;
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+        .temperature {
+            text-align: center;
+            font-size: 3.5rem;
+            font-weight: 500;
+            line-height: 1;
+            margin: 0;
+        }
+
+        .temp-container {
+            display: flex;
+
+            .min-temp, .max-temp {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 2;
+                margin: 0;
+            }
+        
+            .temp-icons {
+                width: 30px;
+            }
+        }
+
+        span {
+            margin-top: 20px;
+        }
+
+        .city {
+            font-size: 2.5rem;
+            font-weight: 500;
+            line-height: 1;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .weather-description {
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 2;
+            text-align: center;
+            margin: 0;
+        }
+    
+        .weather-icon {
+            width: 250px;
+        }
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        text-align: right;
+        
+
+        .details {
+            width:100%;
+
+            .parameter-row {
+                display: flex;
+                justify-content: space-between;
+
+                .parameter-label {
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+
+                .parameter-value {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

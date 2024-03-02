@@ -1,0 +1,63 @@
+.container {
+  max-width: 1080px;
+  margin: 20px auto;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+
+  .logo {
+    width: 200px;
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .search {
+      width: 100%;
+    }
+  }
+}
+
+.live-weather {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.forecast-weather {
+  display: flex;
+  flex-direction: column;
+}
+
+.lottie-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999; 
+  visibility: visible;
+  transition: visibility 0.5s;
+  pointer-events: auto;
+}
+
+.lottie-container.hidden {
+  visibility: hidden;
+}
+
+.lottie-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000000;
+  pointer-events: none;
+}
