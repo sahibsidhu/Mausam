@@ -43,10 +43,12 @@
 
 ## Run the Application
 
-  ```bash
-  npm start
 
-```perl
+
+   ```bash
+     npm start
+
+```
 
 This extended README includes steps for creating a `.env` file, configuring API keys, and building the application. Adjust the instructions based on the specific needs and structure of your project.
 
